@@ -8,23 +8,25 @@ use std::{borrow::Cow, fmt};
 
 #[derive(Clone)]
 pub enum Lang {
+    Czech,
     English,
     French,
-    Czech,
     Norwegian,
     Spanish,
     Swedish,
+    Custom(Cow<'static, str>),
 }
 
 impl Lang {
     pub fn as_str(&self) -> &str {
         match self {
+            Self::Czech => "cs",
             Self::English => "en",
-            Self::Czech => "cz",
             Self::French => "fr",
             Self::Norwegian => "no",
             Self::Spanish => "es",
             Self::Swedish => "sv",
+            Self::Custom(lang) => lang,
         }
     }
 }
