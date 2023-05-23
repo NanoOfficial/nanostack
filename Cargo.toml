@@ -2,5 +2,7 @@
 members = [
     "src/supportedlang",
     "src/routes",
-    "src/static_ref"
+    "src/static_ref",
+    "src/entry_macros",
+    "src/stackcore"
 ]
