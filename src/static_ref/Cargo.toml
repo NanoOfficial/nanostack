@@ -1,8 +1,8 @@
 [package]
-name = "routes"
+name = "static_ref"
 version = "0.1.0"
 edition = "2021"
-description = "Routes functionalities & macros."
+description = "Static Ref Macros & Functions"
 
 [lib]
 proc-macro = true
@@ -11,4 +11,3 @@ proc-macro = true
 syn = { version = "1.0.86", features = ["full"] }
 quote = { version = "1.0", default-features = false }
 proc-macro2 = { version = "1.0", default-features = false }
-urlencoding = { version = "2.1.0", default-features = false }

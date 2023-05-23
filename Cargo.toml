@@ -1,5 +1,6 @@
 [workspace]
 members = [
     "src/supportedlang",
-    "src/routes"
+    "src/routes",
+    "src/static_ref"
 ]
