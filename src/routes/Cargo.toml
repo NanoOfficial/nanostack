@@ -1,0 +1,16 @@
+[package]
+name = "routes"
+version = "0.1.0"
+edition = "2021"
+description = "Routes functionalities & macros."
+
+[lib]
+proc-macro = true
+
+[dependencies]
+# syn = { version = "2.0.16"}
+# syn = { version = "1.0.0", default-features = false, features["full"] }
+syn = { version = "1.0.86", features = ["full"] }
+quote = { version = "1.0", default-features = false }
+proc-macro2 = { version = "1.0", default-features = false }
+urlencoding = { version = "2.1.0", default-features = false }
