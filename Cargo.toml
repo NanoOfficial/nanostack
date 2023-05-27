@@ -6,5 +6,6 @@ members = [
     "src/entry_macros",
     "src/stackcore",
     "src/stack",
-    "src/hsluv_macro"
+    "src/hsluv_macro",
+    "src/hsluv"
 ]
