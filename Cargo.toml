@@ -4,5 +4,7 @@ members = [
     "src/routes",
     "src/static_ref",
     "src/entry_macros",
-    "src/stackcore"
+    "src/stackcore",
+    "src/stack",
+    "src/hsluv_macro"
 ]
