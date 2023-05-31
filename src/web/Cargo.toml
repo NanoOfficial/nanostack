@@ -1,0 +1,42 @@
+[package]
+name = "web"
+version = "0.1.0"
+edition = "2021"
+
+wasm-bindgen = { version = "=0.2.84", default-features = false }
+wasm-bindgen-futures = { version = "0.4.34", default-features = false }
+js-sys = { version = "0.3.60", default-features = false }
+futures-signals = { version = "0.3.32", default-features = false }
+futures-util = { version = "0.3.21", default-features = false }
+futures-channel = { version = "0.3.21", default-features = false }
+dominator = { version = "0.5.32", default-features = false }
+paste = { version = "1.0.7", default-features = false }
+send_wrapper = { version = "0.6.0", default-features = false }
+pin-project = { version = "1.0.11", default-features = false }
+once_cell = { version = "1.12.0", features = ["alloc"], default-features = false }
+gensym = { version = "0.1.0", default-features = false }
+strum = { version = "0.24.1", features = ["derive"], default-features = false }
+num-traits = { version = "0.2.15", features = ["std"], default-features = false }
+route_macro = { path = "../routes_macro", default-features = false, optional = true }
+static_ref_macro = { path = "../static_ref_macro", default-features = false, optional = true }
+moonlight = { path = "../stackcore", features = ["frontend"], optional = true }
+hsluv = { path = "../hsluv", features = ["hsluv_macro"], default-features = false }
+lang = { path = "../supportedlang", default-features = false }
+console_error_panic_hook = { version = "0.1.7", default-features = false, optional = true }
+wee_alloc = { version = "0.4.5", default-features = false, optional = true }
+enclose = { version = "1.1.8", default-features = false, optional = true }
+apply = { version = "0.3.0", default-features = false, optional = true }
+serde-lite = { version = "0.3.1", features = ["derive"], default-features = false, optional = true }
+serde = { version = "1.0.137", features = ["derive", "std", "rc"], default-features = false, optional = true }
+serde_json = { version = "1.0.81", features = ['std'], default-features = false, optional = true }
+thiserror = { version = "1.0.31", default-features = false, optional = true }
+chrono = { version = "0.4.19", default-features = false, optional = true }
+serde-wasm-bindgen = { version = "0.4.5", default-features = false, optional = true }
+
+ufmt = { version = "0.1.0", features = ["std"], default-features = false, optional = true }
+lexical = { git = "https://github.com/Alexhuszagh/rust-lexical", rev = "7010efd5e144faff0c9afbc1b22b47d9d9567966", features = ["std"], default-features = false, optional = true }
+
+[dependencies.web-sys]
+version = "0.3.61"
+
+

@@ -2,10 +2,13 @@
 members = [
     "src/supportedlang",
     "src/routes",
+    "src/routes_macro",
     "src/static_ref",
+    "src/static_ref_macro",
     "src/entry_macros",
     "src/stackcore",
     "src/stack",
     "src/hsluv_macro",
-    "src/hsluv"
+    "src/hsluv",
+    "src/web",
 ]
